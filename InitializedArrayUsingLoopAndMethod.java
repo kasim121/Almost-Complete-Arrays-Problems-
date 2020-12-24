@@ -19,6 +19,11 @@ class InitializedArrayUsingLoopAndMethod{
 
     public void insertUsingMethod(int[] arr, int valuetobeInserted){
             arr[count++] = valuetobeInserted;
+         //Ismain arr[0 (means count = 0)] = valuetobeInserted => j = 0+1 => j:- = 1
+         //arr[1 (becoz count = count+1=>1)] => valuetobeInserted means j = 1+1 :- j = 2
+         //arr[2 (becoz count = count+1=>2)] => valuetobeInserted means j = 2+1 :- j = 3
+         // arr[3 (becoz count = count+1=>3)] => valuetobeInserted means j = 3+1 :- j = 4
+        //arr[4 (becoz count = count+1=>4)]=> valuetobeInserted means j = 4+1 :- j = 5
     }
 
     public void print(int[] arr){
