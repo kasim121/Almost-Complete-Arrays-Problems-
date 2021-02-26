@@ -22,20 +22,20 @@ class ArrayOperationsInsertAtLastMiddleStart{
 
 
     }
-        public void insert(int[] arr, int value){
+        public void insert(int[] arr, int intjValue){
 
-            arr[count++] = value;
+            arr[count++] = intjValue;
         }
-        public void insertAtStart(int arr[], int insertvalue){
-        //   for(int i = arr.length-1; i > 2; i--){
-              for(int i = count-1; i > 0; i--){
-              arr[i] = arr[i-1];
+//         public void insertAtStart(int arr[], int insertvalue){
+//         //   for(int i = arr.length-1; i > 2; i--){
+//               for(int i = count-1; i > 0; i--){
+//               arr[i] = arr[i-1];
               
-          }
-          arr[0] = insertvalue;
+//           }
+//           arr[0] = insertvalue;
 
           
-        }
+//         }
         public void insertAtAnyPosition(int[] arr, int value, int position){
             for(int i = count-1; i > position; i--){
                     arr[i] = arr[i-1];
@@ -43,6 +43,7 @@ class ArrayOperationsInsertAtLastMiddleStart{
             }
             arr[position] = value;
         }
+    
         public void printArray(int[] arr){
 
             for(int i = 0; i < arr.length; i++){
